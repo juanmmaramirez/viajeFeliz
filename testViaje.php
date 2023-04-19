@@ -34,7 +34,7 @@ do {
                     foreach ($viajes as $viaje) {
                         if ($codigoViaje == $viaje->get_viaje()) {
                             echo "El codigo de viaje esta en uso...". "\n";
-                            $repetido = true;
+                            $repetido=true;
                         }
                     }
                 }
