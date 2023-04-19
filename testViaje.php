@@ -3,12 +3,6 @@
 include_once ("Viaje.php");
 
 
-function escribirAmarillo($texto)
-{
-    echo "\e[1;37;43m $texto \e[0m";
-}
-
-
 $viajes = [];
 $salida = false;
 
@@ -39,7 +33,7 @@ do {
                 if (count($viajes) > 0) {
                     foreach ($viajes as $viaje) {
                         if ($codigoViaje == $viaje->get_viaje()) {
-                            echo EscribirAmarillo("El codigo de viaje esta en uso...") . "\n";
+                            echo "El codigo de viaje esta en uso...". "\n";
                             $repetido = true;
                         }
                     }
